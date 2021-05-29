@@ -26,10 +26,33 @@ body {
   padding-bottom: 50px;
 }
 
+.bg-1 {
+  background-image: url(./images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.bg-2 {
+  background-image: url(./images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .hero-title {
@@ -40,7 +63,7 @@ body {
 
 .toggle-button-section {
   display: flex;
-  margin: 15px 0 30px;
+  margin: 15px 0 35px;
   justify-content: center;
   align-items: center;
 
@@ -53,7 +76,7 @@ body {
 // Color
 
 .bg-primary {
-  background: linear-gradient(150deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 50%);
+  background: linear-gradient(to bottom right, #a3a8f0 0%, #696fdd 100%);
   color: #fff;
 }
 
@@ -91,13 +114,12 @@ body {
   width: 50%;
   height: 31px;
   padding: 0;
-  // line-height: 26px;
   box-sizing: border-box;
 }
 .onoffswitch-inner:before,
 .onoffswitch-inner:after {
   content: "";
-  background: hsl(237, 63%, 64%);
+  background: linear-gradient(to bottom right, #a3a8f0 0%, #696fdd 100%);
 }
 
 .onoffswitch-switch {
@@ -123,26 +145,26 @@ body {
 .pricing-component {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 25px 0;
 
   .card {
-    width: 300px;
+    width: 350px;
     text-align: center;
-    padding: 30px 25px 30px 35px;
+    padding: 30px 30px 30px 45px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 5px 30px 0px hsla(237, 63%, 64%, 0.15);
 
     &:first-child {
-      padding: 30px 35px 30px 25px;
+      padding: 30px 45px 30px 30px;
     }
 
     &.bg-primary {
-      width: 280px;
+      width: 310px;
       box-shadow: none;
       transform: scale(1.1);
       font-size: 90%;
-      padding: 40px 25px 30px;
+      padding: 40px 30px 30px;
     }
 
     .monthly,
@@ -153,7 +175,7 @@ body {
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
     }
 
     .dollar {
@@ -162,11 +184,11 @@ body {
     }
 
     p {
-      border-bottom: 1px solid var(--light-gray-blue);
+      border-bottom: 1px solid hsl(234, 18%, 84%);
       padding: 10px;
     }
     p:first-child {
-      border-top: 1px solid var(--light-gray-blue);
+      border-top: 1px solid hsl(234, 18%, 84%);
     }
     p:last-child {
       margin-bottom: 30px;
@@ -175,7 +197,7 @@ body {
 }
 
 .btn {
-  background: linear-gradient(300deg, hsl(237, 63%, 64%) 0%, hsl(236, 72%, 79%) 100%);
+  background: linear-gradient(to bottom right, #a3a8f0 0%, #696fdd 100%);
   color: #fff;
   outline: none;
   border: 0;
@@ -219,7 +241,7 @@ footer {
   right: 0;
   width: 100%;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-around;
 
@@ -239,21 +261,29 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding-top: 60px;
+  .bg-1 {
+    width: 250px;
+    background-size: contain;
+    right: -65px;
+  }
+  .bg-2 {
+    width: 250px;
+    background-size: contain;
+    left: -65px;
   }
   .pricing-component {
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
+
     .card {
       width: 100%;
       margin-bottom: 30px;
-      padding: 30px 25px;
+      padding: 30px;
 
       &.bg-primary {
         width: 100%;
         transform: scale(1);
-        padding: 30px 25px;
+        padding: 30px;
         .btn {
           font-size: 90%;
         }
