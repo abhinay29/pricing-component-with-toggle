@@ -261,10 +261,17 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
   .bg-1 {
     width: 250px;
     background-size: contain;
-    right: -65px;
+    transform: translate(100px, -10px);
   }
   .bg-2 {
     width: 250px;
