@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/abhinay29/abhinay29.github.io/tree/master/pricing-component-with-toggle-master](https://github.com/abhinay29/abhinay29.github.io/tree/master/pricing-component-with-toggle-master)
-- Live Site URL: [https://abhinay29.github.io/pricing-component-with-toggle-master/](https://abhinay29.github.io/pricing-component-with-toggle-master/)
+- Solution URL: [hhttps://github.com/abhinay29/pricing-component-with-toggle](https://github.com/abhinay29/pricing-component-with-toggle)
+- Live Site URL: [https://abhinay29.github.io/pricing-component-with-toggle/](https://abhinay29.github.io/pricing-component-with-toggle/)
 
 ## My process
 
